@@ -1,0 +1,1 @@
+{ "query": "query { repository(owner:\"#owner#\", name:\"#repository#\") { object(expression: \"master\") { ... on Commit { blame(path: \"#file_path#\") { ranges { startingLine endingLine commit { author { name }}}}}}}}" }
